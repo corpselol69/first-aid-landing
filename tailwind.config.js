@@ -28,7 +28,7 @@ export default {
       },
       fontFamily: {
         sans: [
-          "Inter",
+          "Montserrat",
           "ui-sans-serif",
           "system-ui",
           "Segoe UI",
@@ -40,6 +40,16 @@ export default {
           "Segoe UI Emoji",
           "Segoe UI Symbol",
           "Noto Color Emoji",
+        ],
+        display: [
+          "Unbounded",
+          "Montserrat",
+          "ui-sans-serif",
+          "system-ui",
+          "Segoe UI",
+          "Roboto",
+          "Helvetica",
+          "Arial",
         ],
       },
     },
