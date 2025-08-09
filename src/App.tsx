@@ -1,5 +1,5 @@
-import Home from './pages/Home'
-import { Footer } from './components/Footer'
+import Home from "./pages/Home";
+import { Footer } from "./components/Footer";
 
 export default function App() {
   return (
@@ -9,5 +9,5 @@ export default function App() {
       </div>
       <Footer />
     </div>
-  )
+  );
 }
