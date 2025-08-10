@@ -9,7 +9,7 @@ export default {
         lg: "1.5rem",
       },
       screens: {
-        xl: "1200px",
+        xl: "1300px",
       },
     },
     extend: {
@@ -20,8 +20,8 @@ export default {
           light: "#7DD3FC",
         },
         accent: "#22C55E",
-  brand: '#95ab7d',
-  danger: '#FF3B30',
+        brand: "#95ab7d",
+        danger: "#FF3B30",
         muted: "#64748B",
         ink: "#0F172A",
         paper: "#F8FAFC",
