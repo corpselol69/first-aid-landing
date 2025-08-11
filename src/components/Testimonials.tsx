@@ -19,34 +19,49 @@ export function Testimonials() {
   const items = data ?? [
     {
       id: 1,
-      author: "Иван",
-      text: "Отличное приложение — всё понятно и оффлайн!",
+      author: "Азат",
+      text: "Нахожусь в зоне СВО, программа научила многому, оказал помощь более 20 300ым. Огромное спасибо!",
     },
-    { id: 2, author: "Мария", text: "Помогло в дороге, спасибо за алгоритмы." },
+    {
+      id: 2,
+      author: "Игнат",
+      text: "Спасибо разработчикам, одно из самых полезных приложений на Rustore. Спасибо!",
+    },
     {
       id: 3,
-      author: "Алексей",
-      text: "Минималистично и быстро, нашёл всё нужное.",
+      author: "Grehmas",
+      text: "Очень полезное приложение по первой помощи и в бою и на гражданке. Благодарность всем причастным и Юричу!",
     },
-    { id: 4, author: "Анна", text: "Крутая идея, советую сохранить заранее." },
+    {
+      id: 4,
+      author: "Алекс",
+      text: "Это самое лучшее из приложений по мед-инструкции, что я видел. Спасибо Вам!",
+    },
   ];
 
   return (
-    <section className="section bg-white">
+    <section className="section">
       <div className="container">
-        <h2 className="text-2xl font-semibold">Отзывы</h2>
+        <h2 className="text-2xl font-semibold text-white">Отзывы</h2>
         <div className="mt-4 embla" ref={emblaRef}>
           <div className="embla__container">
-            {items.map((t) => (
-              <div
-                key={t.id}
-                className="embla__slide pr-4 sm:basis-1/2 lg:basis-1/3"
-              >
-                <div className="h-full rounded-xl border bg-paper p-4">
-                  <div className="text-sm text-muted">{t.author}</div>
-                  <div className="mt-2">{t.text}</div>
+            {items.map(({ id, author, text }) => (
+              <figure key={id} className="relative overflow-visible">
+                {/* наружное «неоновое» свечение по контуру */}
+                <span
+                  aria-hidden
+                  className="pointer-events-none absolute -inset-[8px] -z-10 rounded-[36px] bg-brand/45 blur-[15px]"
+                />
+                {/* сама карточка */}
+                <div className="h-full rounded-[30px] bg-neutral-300/90 p-5 md:p-6 ">
+                  <blockquote className="text-black/80 text-base md:text-lg leading-[1.35]">
+                    {text}
+                  </blockquote>
+                  <figcaption className="mt-6 text-right font-extrabold text-2xl md:text-3xl text-black">
+                    {author}
+                  </figcaption>
                 </div>
-              </div>
+              </figure>
             ))}
           </div>
         </div>
