@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
+import handler from "../api/gratitudes";
+import { data } from "framer-motion/client";
 
-const URL = "https://mgsindikat.ru/pp/gratitude.json";
+const URL = "/api/gratitudes";
 
 const fallback = [
   "tvtacticalmed",
@@ -34,8 +36,9 @@ export function Gratitudes() {
     (async () => {
       try {
         const res = await fetch(URL, { cache: "no-cache" });
-        const data = await res.json(); // ожидаем массив объектов { id, nickname }
-
+        const text = await res.text();
+        const fixedText = `[${text}]`; // обернули в массив
+        const data = JSON.parse(fixedText);
         if (!cancelled && Array.isArray(data)) {
           const parsed = data.map((item) => item.nickname).filter(Boolean); // убираем пустые значения
 
