@@ -2,10 +2,10 @@ export function Gratitudes() {
   return (
     <section className="section">
       <div className="container">
-        <h2 className="text-white text-3xl font-display font-bold uppercase text-center">
+        <h2 className=" text-3xl font-display font-bold uppercase text-center">
           Благодарим за помощь в распространении
         </h2>
-        <div className="mt-4 grid sm:grid-cols-2 md:grid-cols-3 gap-3 text-white/90 text-xl font-display">
+        <div className="mt-16 flex flex-wrap gap-x-2 gap-y-2 text-3xl font-display font-extralight text-center items-center justify-center">
           {[
             "tvtacticalmed",
             "militarymaps",
@@ -29,9 +29,13 @@ export function Gratitudes() {
             "Our_people_29",
             "elina_sedina",
           ].map((name) => (
-            <div key={name} className="text-center">
-              @{name}
-            </div>
+            <a
+              key={name}
+              href={`https://t.me/${name}`}
+              className=" transition-colors duration-300 hover:text-brand"
+            >
+              @<span className="underline">{name}</span>
+            </a>
           ))}
         </div>
       </div>
