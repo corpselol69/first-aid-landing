@@ -2,7 +2,7 @@ export function Hero() {
   const logo = `${import.meta.env.BASE_URL}figma/logo.svg`;
   return (
     <>
-      <section className="section text-white">
+      <section className="text-white">
         <div className="w-full flex justify-center h-screen items-center">
           <img
             src={logo}
