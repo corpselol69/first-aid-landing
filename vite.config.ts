@@ -15,6 +15,12 @@ export default defineConfig({
         rewrite: (path) =>
           path.replace(/^\/api\/gratitudes$/, "/pp/gratitude.json"),
       },
+      "/api/reviews": {
+        target: "https://mgsindikat.ru",
+        changeOrigin: true,
+        secure: true,
+        rewrite: (path) => path.replace(/^\/api\/reviews$/, "/pp/review.json"),
+      },
     },
   },
   preview: { port: 5173 },
