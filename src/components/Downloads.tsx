@@ -15,9 +15,8 @@ export function Downloads() {
 
         <div className="mt-8 grid gap-[4rem]">
           <a
-            href={RUSTORE_URL}
-            target={RUSTORE_URL.startsWith("http") ? "_blank" : undefined}
-            rel={RUSTORE_URL.startsWith("http") ? "noreferrer" : undefined}
+            href={"https://www.rustore.ru/catalog/app/ru.bnice.a300"}
+            target="_blank"
             className="group relative rounded-[50px] px-6 py-10 md:px-10 md:py-12 bg-black/100 overflow-visible shadow-[10px_10px_4px_0_rgba(0,0,0,0.25)]"
           >
             {/* outer green glow */}
@@ -39,9 +38,8 @@ export function Downloads() {
 
           <div className="flex flex-col items-center gap-3 w-full">
             <a
-              href={APK_URL}
-              target={APK_URL.startsWith("http") ? "_blank" : undefined}
-              rel={APK_URL.startsWith("http") ? "noreferrer" : undefined}
+              href={"https://podmed.ru/apk/"}
+              target="_blank"
               className="group relative rounded-[50px] w-full px-6 py-10 md:px-10 md:py-12 bg-black/100 overflow-visible shadow-[10px_10px_4px_0_rgba(0,0,0,0.25)]"
             >
               <span
@@ -67,9 +65,8 @@ export function Downloads() {
           </div>
 
           <a
-            href={WEB_URL}
-            target={WEB_URL.startsWith("http") ? "_blank" : undefined}
-            rel={WEB_URL.startsWith("http") ? "noreferrer" : undefined}
+            href={"https://300.podmed.ru"}
+            target="_blank"
             className="group relative rounded-[50px] px-6 py-10 md:px-10 md:py-12 bg-black/100 overflow-visible shadow-[10px_10px_4px_0_rgba(0,0,0,0.25)]"
           >
             <span
