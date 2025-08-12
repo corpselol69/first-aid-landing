@@ -33,7 +33,7 @@ export default function Home() {
       <BlocksInfo />
       <UpdateBanner />
       <Testimonials />
-      <Partners />{" "}
+      <Partners />
       <img
         src={ellipse}
         alt="фон"

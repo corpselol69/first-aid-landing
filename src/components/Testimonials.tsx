@@ -65,7 +65,7 @@ export function Testimonials() {
   return (
     <section className="section w-[100vw] overflow-hidden relative">
       <div className="container ">
-        <h2 className="text-5xl font-bold text-white uppercase text-center">
+        <h2 className="text-2xl md:text-5xl font-bold text-white uppercase text-center">
           Отзывы
         </h2>
         <div className="mt-16" ref={emblaRef}>
@@ -73,7 +73,7 @@ export function Testimonials() {
             {reviews.map(({ id, author, text }) => (
               <figure
                 key={id}
-                className="relative overflow-visible min-w-[350px] mr-4"
+                className="relative overflow-visible min-w-[100%] md:min-w-[350px] mr-4"
               >
                 <span
                   aria-hidden

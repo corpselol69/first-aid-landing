@@ -7,7 +7,7 @@ export function Partners() {
   return (
     <section className="section">
       <div className="container max-w-[80%]">
-        <h2 className="text-white text-5xl font-display font-bold uppercase text-center">
+        <h2 className="text-white text-2xl  md:text-5xl font-display font-bold uppercase text-center">
           Партнеры
         </h2>
         <div className="  mt-16 grid grid-cols-1 md:grid-cols-3 gap-4 justify-center">
