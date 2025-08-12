@@ -1,11 +1,9 @@
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { useEffect } from "react";
-import { useTestimonialsQuery } from "../services/api";
 import "./Testimonials.css";
 
 export function Testimonials() {
-  const { data } = useTestimonialsQuery();
   const [emblaRef, emblaApi] = useEmblaCarousel(
     { loop: true, align: "start" },
     [Autoplay({ delay: 3000 })]
@@ -14,7 +12,7 @@ export function Testimonials() {
   useEffect(() => {
     if (!emblaApi) return;
     emblaApi.reInit();
-  }, [emblaApi, data]);
+  }, [emblaApi]);
 
   const items = [
     {
