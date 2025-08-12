@@ -6,11 +6,20 @@ export function Screenshots() {
 
   return (
     <section className="section">
-      <div className="flex flex-col items-center  w-full">
-        <div className="group relative mb-[6rem] rounded-[50px] px-10 py-10 md:px-20 md:py-6 bg-black/100 overflow-visible shadow-[10px_10px_4px_0_rgba(0,0,0,0.25)]">
-          <h2 className="font-sans text-lg leading-none md:text-[40px] text-brand text-center">
-            Оффлайн приложение для iOS
-          </h2>
+      <div className="flex flex-col items-center gap-[4rem] w-full">
+        <div className="flex flex-col items-center gap-3 w-full">
+          <a
+            href={"https://testflight.apple.com/join/yHqqzNek"}
+            target="_blank"
+            className="group relative rounded-[50px] px-10 py-10 md:px-20 md:py-6 bg-black/100 overflow-visible shadow-[10px_10px_4px_0_rgba(0,0,0,0.25)]"
+          >
+            <h2 className="font-sans text-lg leading-none md:text-[40px] text-brand text-center">
+              Офлайн приложение для iOS
+            </h2>
+          </a>
+          <div className="flex items-center justify-center text-lg md:text-3xl font-light">
+            <span>Необходимо установить TestFlight</span>
+          </div>
         </div>
         <div className="container">
           <div className="grid md:grid-cols-3 gap-6">
