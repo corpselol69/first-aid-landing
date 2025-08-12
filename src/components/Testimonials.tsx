@@ -16,7 +16,7 @@ export function Testimonials() {
     emblaApi.reInit();
   }, [emblaApi, data]);
 
-  const items = data ?? [
+  const items = [
     {
       id: 1,
       author: "Азат",
@@ -40,21 +40,25 @@ export function Testimonials() {
   ];
 
   return (
-    <section className="section">
-      <div className="container">
-        <h2 className="text-2xl font-semibold text-white">Отзывы</h2>
-        <div className="mt-4 embla" ref={emblaRef}>
-          <div className="embla__container">
+    <section className="section w-[100vw] overflow-hidden">
+      <div className="container ">
+        <h2 className="text-5xl font-bold text-white uppercase text-center">
+          Отзывы
+        </h2>
+        <div className="mt-16" ref={emblaRef}>
+          <div className="embla__container gap-6 md:gap-8">
             {items.map(({ id, author, text }) => (
-              <figure key={id} className="relative overflow-visible">
-                {/* наружное «неоновое» свечение по контуру */}
+              <figure
+                key={id}
+                className="relative overflow-visible min-w-[350px]"
+              >
                 <span
                   aria-hidden
-                  className="pointer-events-none absolute -inset-[8px] -z-10 rounded-[36px] bg-brand/45 blur-[15px]"
+                  className="pointer-events-none absolute -inset-[8px] -z-10 rounded-[30px] bg-[#95AB7D] blur-[8px] w-[100%] h-[100%] left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2"
                 />
                 {/* сама карточка */}
-                <div className="h-full rounded-[30px] bg-neutral-300/90 p-5 md:p-6 ">
-                  <blockquote className="text-black/80 text-base md:text-lg leading-[1.35]">
+                <div className="h-full rounded-[30px] bg-[#D9D9D9] p-5 md:p-6 ">
+                  <blockquote className="text-black text-base md:text-lg leading-[1.35]">
                     {text}
                   </blockquote>
                   <figcaption className="mt-6 text-right font-extrabold text-2xl md:text-3xl text-black">
