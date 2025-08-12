@@ -1,9 +1,36 @@
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./Testimonials.css";
+import { Review } from "../api/reviews";
+const URL = "/api/reviews";
+
+const fallback = [
+  {
+    id: 1,
+    author: "Азат",
+    text: "Нахожусь в зоне СВО, программа научила многому, оказал помощь более 20 300ым. Огромное спасибо!",
+  },
+  {
+    id: 2,
+    author: "Игнат",
+    text: "Спасибо разработчикам, одно из самых полезных приложений на Rustore. Спасибо!",
+  },
+  {
+    id: 3,
+    author: "Grehmas",
+    text: "Очень полезное приложение по первой помощи и в бою и на гражданке. Благодарность всем причастным и Юричу!",
+  },
+  {
+    id: 4,
+    author: "Алекс",
+    text: "Это самое лучшее из приложений по мед-инструкции, что я видел. Спасибо Вам!",
+  },
+];
 
 export function Testimonials() {
+  const [reviews, setReviews] = useState<Review[]>([]);
+
   const [emblaRef, emblaApi] = useEmblaCarousel(
     { loop: true, align: "start" },
     [Autoplay({ delay: 3000 })]
@@ -12,30 +39,28 @@ export function Testimonials() {
   useEffect(() => {
     if (!emblaApi) return;
     emblaApi.reInit();
-  }, [emblaApi]);
+  }, [emblaApi, reviews]);
 
-  const items = [
-    {
-      id: 1,
-      author: "Азат",
-      text: "Нахожусь в зоне СВО, программа научила многому, оказал помощь более 20 300ым. Огромное спасибо!",
-    },
-    {
-      id: 2,
-      author: "Игнат",
-      text: "Спасибо разработчикам, одно из самых полезных приложений на Rustore. Спасибо!",
-    },
-    {
-      id: 3,
-      author: "Grehmas",
-      text: "Очень полезное приложение по первой помощи и в бою и на гражданке. Благодарность всем причастным и Юричу!",
-    },
-    {
-      id: 4,
-      author: "Алекс",
-      text: "Это самое лучшее из приложений по мед-инструкции, что я видел. Спасибо Вам!",
-    },
-  ];
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      try {
+        const res = await fetch(URL, { cache: "no-cache" });
+        const text = await res.text();
+        const fixedText = `[${text}]`;
+
+        const data = JSON.parse(fixedText);
+
+        if (!cancelled) setReviews(data);
+      } catch (err) {
+        console.error("Ошибка загрузки отзывов:", err);
+        if (!cancelled) setReviews(fallback);
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   return (
     <section className="section w-[100vw] overflow-hidden relative">
@@ -44,11 +69,11 @@ export function Testimonials() {
           Отзывы
         </h2>
         <div className="mt-16" ref={emblaRef}>
-          <div className="embla__container gap-6 md:gap-8">
-            {items.map(({ id, author, text }) => (
+          <div className="embla__container">
+            {reviews.map(({ id, author, text }) => (
               <figure
                 key={id}
-                className="relative overflow-visible min-w-[350px]"
+                className="relative overflow-visible min-w-[350px] mr-4"
               >
                 <span
                   aria-hidden
