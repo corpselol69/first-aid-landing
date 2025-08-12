@@ -40,7 +40,7 @@ export function Testimonials() {
   ];
 
   return (
-    <section className="section w-[100vw] overflow-hidden">
+    <section className="section w-[100vw] overflow-hidden relative">
       <div className="container ">
         <h2 className="text-5xl font-bold text-white uppercase text-center">
           Отзывы
