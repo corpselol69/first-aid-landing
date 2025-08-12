@@ -12,6 +12,7 @@ import { Flag } from "../components/Flag";
 export default function Home() {
   const base = import.meta.env.BASE_URL;
   const bg = `${base}figma/Vector.svg`;
+  const bg2 = `${base}figma/Vector2.svg`;
   const ellipse = `${base}figma/Ellipse.svg`;
   const ellipse2 = `${base}figma/Ellipse2.svg`;
   return (
@@ -39,9 +40,9 @@ export default function Home() {
         className="absolute block w-screen max-w-none h-auto bottom-0 z-0 left-0 "
       />
       <img
-        src={bg}
+        src={bg2}
         alt="подорожник"
-        className="absolute block w-screen max-w-none h-auto z-0 "
+        className="absolute block w-screen max-w-none h-auto z-0 bottom-[20rem] left-0 opacity-60"
       />
       <Gratitudes />
       <Support />
