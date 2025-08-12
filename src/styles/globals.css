@@ -14,6 +14,10 @@ body,
   overflow-x: hidden
 }
 
+#root {
+  position: relative;
+}
+
 body {
   @apply text-white font-sans antialiased;
   background-color: #000;
@@ -22,6 +26,8 @@ body {
 
 .section {
   @apply py-12 md:py-16 px-4 md:px-8 lg:px-12 xl:px-16;
+  z-index: 10;
+  position: relative;
 }
 
 /* Typography */
