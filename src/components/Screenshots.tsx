@@ -5,7 +5,7 @@ export function Screenshots() {
   const shot3 = `${base}figma/0413563786587b8923dd6e7f9dc2ae9d7d8f55fd.png`;
 
   return (
-    <section className="section">
+    <section className="section !px-0 md:px-8">
       <div className="flex flex-col items-center gap-[4rem] w-full">
         <div className="flex flex-col items-center gap-3 w-full">
           <a
@@ -26,29 +26,52 @@ export function Screenshots() {
           </div>
         </div>
         <div className="container">
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="relative">
-              <div className="absolute -inset-1 bg-brand/50 blur-sm rounded-2xl opacity-60" />
+          <div
+            className="
+      flex gap-4 py-4
+      overflow-x-auto overflow-y-hidden scroll-smooth snap-x snap-mandatory
+      md:grid md:grid-cols-3 md:gap-6 md:overflow-visible md:snap-none md:py-0
+    "
+          >
+            {/* Карточка 1 */}
+            <div
+              className="
+        relative shrink-0 w-64 snap-center
+        first:ml-[calc(50vw-8rem)] last:mr-[calc(50vw-8rem)]
+        md:w-full md:shrink md:snap-none md:ml-0 md:first:ml-0 md:mr-0
+      "
+            >
+              <div className="pointer-events-none absolute -inset-1 bg-brand/50 blur-sm rounded-2xl opacity-60" />
               <img
                 src={shot2}
                 alt="скрин 2"
-                className="relative rounded-2xl w-full"
+                className="relative rounded-2xl w-full h-auto block"
               />
             </div>
-            <div className="relative">
-              <div className="absolute -inset-1 bg-brand/50 blur-sm rounded-2xl opacity-60" />
+
+            {/* Карточка 2 */}
+            <div className="relative shrink-0 w-64 snap-center md:w-full md:shrink md:snap-none">
+              <div className="pointer-events-none absolute -inset-1 bg-brand/50 blur-sm rounded-2xl opacity-60" />
               <img
                 src={shot1}
                 alt="скрин 1"
-                className="relative rounded-2xl w-full"
+                className="relative rounded-2xl w-full h-auto block"
               />
             </div>
-            <div className="relative">
-              <div className="absolute -inset-1 bg-brand/50 blur-sm rounded-2xl opacity-60" />
+
+            {/* Карточка 3 */}
+            <div
+              className="
+        relative shrink-0 w-64 snap-center
+        last:mr-[calc(50vw-8rem)]
+        md:w-full md:shrink md:snap-none md:mr-0
+      "
+            >
+              <div className="pointer-events-none absolute -inset-1 bg-brand/50 blur-sm rounded-2xl opacity-60" />
               <img
                 src={shot3}
                 alt="скрин 3"
-                className="relative rounded-2xl w-full"
+                className="relative rounded-2xl w-full h-auto block"
               />
             </div>
           </div>
