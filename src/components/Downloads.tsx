@@ -17,7 +17,7 @@ export function Downloads() {
           <a
             href={"https://www.rustore.ru/catalog/app/ru.bnice.a300"}
             target="_blank"
-            className="group relative rounded-[50px] px-6 py-6 md:px-10 md:py-12 bg-black/100 overflow-visible shadow-[10px_10px_4px_0_rgba(0,0,0,0.25)]"
+            className="group relative rounded-[50px] px-3 py-5 md:px-10 md:py-12 bg-black/100 overflow-visible shadow-[10px_10px_4px_0_rgba(0,0,0,0.25)]"
           >
             {/* outer green glow */}
             <span
@@ -40,13 +40,13 @@ export function Downloads() {
             <a
               href={"https://podmed.ru/apk/"}
               target="_blank"
-              className="group relative rounded-[50px] w-full px-6 py-6 md:px-10 md:py-12 bg-black/100 overflow-visible shadow-[10px_10px_4px_0_rgba(0,0,0,0.25)]"
+              className="group relative rounded-[50px] w-full px-3 py-4 md:px-10 md:py-12 bg-black/100 overflow-visible shadow-[10px_10px_4px_0_rgba(0,0,0,0.25)]"
             >
               <span
                 aria-hidden
                 className="pointer-events-none absolute -inset-1 -z-10 rounded-[50px] bg-brand/60 blur-[15px]"
               />
-              <div className="flex items-center justify-center gap-4">
+              <div className="flex items-center justify-center">
                 <div className="text-center">
                   <div className="font-sans font-bold uppercase text-white text-xl md:text-[96px] leading-none">
                     apk
@@ -67,7 +67,7 @@ export function Downloads() {
           <a
             href={"https://300.podmed.ru"}
             target="_blank"
-            className="group relative rounded-[50px] px-6 py-6 md:px-10 md:py-12 bg-black/100 overflow-visible shadow-[10px_10px_4px_0_rgba(0,0,0,0.25)]"
+            className="group relative rounded-[50px] px-3 py-4 md:px-10 md:py-12 bg-black/100 overflow-visible shadow-[10px_10px_4px_0_rgba(0,0,0,0.25)]"
           >
             <span
               aria-hidden
