@@ -15,6 +15,7 @@ body,
 }
 
 #root {
+  margin: 0 auto;
   position: relative;
 }
 
@@ -28,6 +29,12 @@ body {
   @apply py-12 md:py-16 px-4 md:px-8 lg:px-12 xl:px-16;
   z-index: 10;
   position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+  padding: 0;
 }
 
 /* Typography */
