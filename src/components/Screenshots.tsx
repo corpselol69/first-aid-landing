@@ -6,7 +6,7 @@ export function Screenshots() {
 
   return (
     <section className="section !px-0 md:px-8">
-      <div className="flex flex-col items-center gap-[4rem] w-full">
+      <div className="flex flex-col items-center gap-4 md:gap-[4rem] w-full">
         <div className="flex flex-col items-center gap-3 w-full">
           <a
             href={"https://testflight.apple.com/join/yHqqzNek"}

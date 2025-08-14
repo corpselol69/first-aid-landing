@@ -57,7 +57,7 @@ export function Gratitudes() {
   return (
     <section className="section">
       <div className="container">
-        <h2 className="text-2xl  md:text-5xl font-display font-bold uppercase text-center">
+        <h2 className="text-2xl md:text-4xl font-display font-bold uppercase text-center !leading-[140%]">
           Благодарим за помощь в распространении
         </h2>
         <div className="mt-16 flex flex-wrap gap-x-2 gap-y-2 text-xl  md:text-3xl font-display font-extralight text-center items-center justify-center">
