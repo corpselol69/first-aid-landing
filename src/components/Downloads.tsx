@@ -22,7 +22,7 @@ export function Downloads() {
             {/* outer green glow */}
             <span
               aria-hidden
-              className="pointer-events-none absolute -inset-1 -z-10 rounded-[20px] bg-brand/60 blur-[5px] md:blur-[15px]"
+              className="pointer-events-none absolute -inset-1 -z-10 rounded-[20px] bg-brand/60 blur-[5px] md:blur-[12px]"
             />
             {/* inner edge glow
             <span
@@ -44,7 +44,7 @@ export function Downloads() {
             >
               <span
                 aria-hidden
-                className="pointer-events-none absolute -inset-1 -z-10 rounded-[20px]  bg-brand/60 blur-[5px] md:blur-[15px]"
+                className="pointer-events-none absolute -inset-1 -z-10 rounded-[20px]  bg-brand/60 blur-[5px] md:blur-[12px]"
               />
               <div className="flex items-center justify-center">
                 <div className="text-center">
@@ -75,7 +75,7 @@ export function Downloads() {
           >
             <span
               aria-hidden
-              className="pointer-events-none absolute -inset-1 -z-10 rounded-[20px] bg-brand/60 blur-[5px] md:blur-[15px]"
+              className="pointer-events-none absolute -inset-1 -z-10 rounded-[20px] bg-brand/60 blur-[5px] md:blur-[12px]"
             />
             <div className="flex items-center justify-center gap-4">
               <div className="text-center">
