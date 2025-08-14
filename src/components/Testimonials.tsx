@@ -31,10 +31,10 @@ const fallback = [
 export function Testimonials() {
   const [reviews, setReviews] = useState<Review[]>([]);
 
-  const [emblaRef, emblaApi] = useEmblaCarousel(
-    { loop: true, align: "start" },
-    [Autoplay({ delay: 3000 })]
-  );
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    loop: true,
+    align: "center",
+  });
 
   useEffect(() => {
     if (!emblaApi) return;
@@ -63,7 +63,7 @@ export function Testimonials() {
   }, []);
 
   return (
-    <section className="section w-[100vw] overflow-hidden relative">
+    <section className="section w-[100vw] overflow-visible relative ">
       <div className="container ">
         <h2 className="text-2xl md:text-5xl font-bold text-white uppercase text-center">
           Отзывы
