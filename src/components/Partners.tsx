@@ -7,10 +7,10 @@ export function Partners() {
   return (
     <section className="section !px-0 md:px-8">
       <div className="container md:max-w-[80%]">
-        <h2 className="text-white text-2xl md:text-4xl font-display font-bold uppercase text-center">
+        <h2 className="text-white text-xl md:text-3xl font-display font-bold uppercase text-center">
           Партнеры
         </h2>
-        <div className="container mt-16">
+        <div className="container mt-12">
           <div
             className="
     flex gap-4 -mx-4 px-4 py-2

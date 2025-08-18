@@ -9,7 +9,7 @@ export function Downloads() {
   return (
     <section className="section relative overflow-visible">
       <div className="container relative">
-        <p className="font-display text-2xl md:text-4xl text-white text-center font-extralight leading-relaxed">
+        <p className="font-display text-xl md:text-3xl text-white text-center font-extralight leading-relaxed">
           Скачать:
         </p>
 
@@ -17,7 +17,7 @@ export function Downloads() {
           <a
             href={"https://www.rustore.ru/catalog/app/ru.bnice.a300"}
             target="_blank"
-            className="group relative rounded-[20px] px-3 py-8 md:px-8 md:py-9 bg-black/100 overflow-visible shadow-[3px_3px_4px_0_rgba(0,0,0,0.25)] md:shadow-[6px_6px_4px_0_rgba(0,0,0,0.25)]"
+            className="group relative rounded-[20px] px-3 py-7 md:px-8 md:py-8 bg-black/100 overflow-visible shadow-[3px_3px_4px_0_rgba(0,0,0,0.25)] md:shadow-[6px_6px_4px_0_rgba(0,0,0,0.25)]"
           >
             <span
               aria-hidden
@@ -25,7 +25,7 @@ export function Downloads() {
             />
 
             <div className="text-center">
-              <div className="font-bold font-sans text-[56px] leading-none text-xl md:text-[2rem] text-white">
+              <div className="font-bold font-sans leading-none text-l md:text-2xl text-white">
                 RuStore
               </div>
             </div>
@@ -35,7 +35,7 @@ export function Downloads() {
             <a
               href={"https://podmed.ru/apk/"}
               target="_blank"
-              className="group relative rounded-[20px]  w-full px-3 py-4 md:px-8 md:py-4 bg-black/100 overflow-visible shadow-[3px_3px_4px_0_rgba(0,0,0,0.25)] md:shadow-[6px_6px_4px_0_rgba(0,0,0,0.25)]"
+              className="group relative rounded-[20px]  w-full px-3 py-3 md:px-8 md:py-3 bg-black/100 overflow-visible shadow-[3px_3px_4px_0_rgba(0,0,0,0.25)] md:shadow-[6px_6px_4px_0_rgba(0,0,0,0.25)]"
             >
               <span
                 aria-hidden
@@ -43,10 +43,10 @@ export function Downloads() {
               />
               <div className="flex items-center justify-center">
                 <div className="text-center">
-                  <div className="font-sans font-bold uppercase text-white text-xl md:text-[2rem] leading-none">
+                  <div className="font-sans font-bold uppercase text-white text-l md:text-2xl leading-none">
                     apk
                   </div>
-                  <div className="flex items-center justify-center gap-2 text-white/90 text-l md:text-xl font-display font-extralight mt-2">
+                  <div className="flex items-center justify-center gap-2 text-white/90 text-xs md:text-base font-display font-extralight mt-2">
                     <img
                       src={android}
                       alt="Android"
@@ -57,7 +57,7 @@ export function Downloads() {
                 </div>
               </div>
             </a>
-            <div className="flex items-center justify-center text-l md:text-xl font-light">
+            <div className="flex items-center justify-center text-xs md:text-base font-light">
               <img src={mark} alt="Android" className="h-5 w-5 md:h-8 md:w-8" />
               <span>Требуется Android 6 и выше</span>
             </div>
@@ -66,7 +66,7 @@ export function Downloads() {
           <a
             href={"https://300.podmed.ru"}
             target="_blank"
-            className="group relative rounded-[20px] px-3 py-4 md:px-8 md:py-4 bg-black/100 overflow-visible shadow-[3px_3px_4px_0_rgba(0,0,0,0.25)] md:shadow-[6px_6px_4px_0_rgba(0,0,0,0.25)]"
+            className="group relative rounded-[20px] px-3 py-3 md:px-8 md:py-3 bg-black/100 overflow-visible shadow-[3px_3px_4px_0_rgba(0,0,0,0.25)] md:shadow-[6px_6px_4px_0_rgba(0,0,0,0.25)]"
           >
             <span
               aria-hidden
@@ -74,10 +74,10 @@ export function Downloads() {
             />
             <div className="flex items-center justify-center gap-4">
               <div className="text-center">
-                <div className="font-sans font-bold text-white text-xl md:text-[2rem] leading-none">
+                <div className="font-sans font-bold text-white text-l md:text-2xl leading-none">
                   ВЕБ версия
                 </div>
-                <div className="flex items-center justify-center gap-2 text-white/90 text-l font-extralight md:text-xl font-display lowercase mt-2">
+                <div className="flex items-center justify-center gap-2 text-white/90 text-xs font-extralight md:text-base font-display lowercase mt-2">
                   <img
                     src={laptop}
                     alt="Web"
@@ -91,7 +91,7 @@ export function Downloads() {
         </div>
 
         <div className="mt-3 md:mt-6 md:w-[60%] mx-auto">
-          <div className="text-white text-l md:text-xl text-center leading-snug md:leading-tight font-light">
+          <div className="text-white text-xs md:text-base text-center leading-snug md:leading-tight font-light">
             В вашем браузере может работать некорректно — используйте последнюю
             версию: Яндекс, Chrome, Safari, Edge
           </div>

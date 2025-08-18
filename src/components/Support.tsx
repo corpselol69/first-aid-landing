@@ -3,9 +3,9 @@ export function Support() {
     <section className="section">
       <div className="container uppercase font-display flex flex-col items-center gap-16">
         <div className="flex flex-col items-center gap-1">
-          <p className="text-l  md:text-2xl font-light">Мы в телеграмме</p>
+          <p className="text-l  md:text-xl font-light">Мы в телеграмме</p>
           <a
-            className=" text-brand text-2xl  md:text-4xl font-extrabold"
+            className=" text-brand text-xl  md:text-3xl font-extrabold"
             href="https://t.me/podoroZnikRF"
             target="_blank"
             rel="noreferrer"
@@ -15,9 +15,9 @@ export function Support() {
         </div>
 
         <div className="flex flex-col items-center gap-1 ">
-          <p className="text-l  md:text-2xl font-light">Поддержка</p>
+          <p className="text-l  md:text-xl font-light">Поддержка</p>
           <a
-            className="text-brand text-2xl  md:text-4xl font-extrabold"
+            className="text-brand text-xl  md:text-3xl font-extrabold"
             href="https://t.me/pplus_support"
             target="_blank"
             rel="noreferrer"

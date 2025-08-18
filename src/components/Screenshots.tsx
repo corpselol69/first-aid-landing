@@ -11,17 +11,17 @@ export function Screenshots() {
           <a
             href={"https://testflight.apple.com/join/yHqqzNek"}
             target="_blank"
-            className="group relative rounded-[50px] px-6 py-6 md:px-20 md:py-4 bg-black/100 overflow-visible shadow-[4px_4px_3px_0_rgba(0,0,0,0.25)]"
+            className="group relative rounded-[50px] px-6 py-3 md:px-20 md:py-4 bg-black/100 overflow-visible shadow-[4px_4px_3px_0_rgba(0,0,0,0.25)]"
           >
             <span
               aria-hidden
               className="pointer-events-none absolute -inset-1 -z-10 rounded-[50px] bg-brand/60 blur-[10px]"
             />
-            <h2 className="font-sans text-lg leading-none md:text-2xl text-center">
+            <h2 className="font-sans leading-none text-base md:text-lg text-center">
               Офлайн приложение для iOS
             </h2>
           </a>
-          <div className="flex items-center justify-center text-l md:text-xl font-light">
+          <div className="flex items-center justify-center text-sm md:text-base font-light">
             <span>Необходимо установить TestFlight</span>
           </div>
         </div>

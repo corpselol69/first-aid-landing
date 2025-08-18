@@ -65,10 +65,10 @@ export function Testimonials() {
   return (
     <section className="section w-[100vw] overflow-visible relative ">
       <div className="container ">
-        <h2 className="text-2xl md:text-4xl font-bold text-white uppercase text-center">
+        <h2 className="text-xl md:text-3xl font-bold text-white uppercase text-center">
           Отзывы
         </h2>
-        <div className="mt-16" ref={emblaRef}>
+        <div className="mt-12" ref={emblaRef}>
           <div className="embla__container">
             {reviews.map(({ id, author, text }) => (
               <figure
@@ -81,10 +81,10 @@ export function Testimonials() {
                 />
                 {/* сама карточка */}
                 <div className="h-full rounded-[30px] bg-[#D9D9D9] p-5 md:p-6 ">
-                  <blockquote className="text-black text-base md:text-lg leading-[1.35]">
+                  <blockquote className="text-black text-sm md:text-base leading-[1.35]">
                     {text}
                   </blockquote>
-                  <figcaption className="mt-6 text-right font-extrabold text-2xl md:text-3xl text-black">
+                  <figcaption className="mt-6 text-right font-extrabold text-xl md:text-2xl text-black">
                     {author}
                   </figcaption>
                 </div>
