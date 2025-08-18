@@ -17,18 +17,13 @@ export function Downloads() {
           <a
             href={"https://www.rustore.ru/catalog/app/ru.bnice.a300"}
             target="_blank"
-            className="group relative rounded-[20px] px-3 py-5 md:px-8 md:py-6 bg-black/100 overflow-visible shadow-[3px_3px_4px_0_rgba(0,0,0,0.25)] md:shadow-[6px_6px_4px_0_rgba(0,0,0,0.25)]"
+            className="group relative rounded-[20px] px-3 py-8 md:px-8 md:py-9 bg-black/100 overflow-visible shadow-[3px_3px_4px_0_rgba(0,0,0,0.25)] md:shadow-[6px_6px_4px_0_rgba(0,0,0,0.25)]"
           >
-            {/* outer green glow */}
             <span
               aria-hidden
               className="pointer-events-none absolute -inset-1 -z-10 rounded-[20px] bg-brand/60 blur-[5px] md:blur-[12px]"
             />
-            {/* inner edge glow
-            <span
-              aria-hidden
-              className="pointer-events-none absolute inset-0 -z-10 rounded-[50px] ring-1 ring-brand/20 "
-            /> */}
+
             <div className="text-center">
               <div className="font-bold font-sans text-[56px] leading-none text-xl md:text-[2rem] text-white">
                 RuStore
