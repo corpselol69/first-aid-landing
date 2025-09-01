@@ -7,24 +7,6 @@ export function Screenshots() {
   return (
     <section className="section !px-0 md:px-8">
       <div className="flex flex-col items-center gap-4 md:gap-[4rem] w-full">
-        <div className="flex flex-col items-center gap-3 w-full">
-          <a
-            href={"https://testflight.apple.com/join/yHqqzNek"}
-            target="_blank"
-            className="group relative rounded-[50px] px-6 py-3 md:px-20 md:py-4 bg-black/100 overflow-visible shadow-[4px_4px_3px_0_rgba(0,0,0,0.25)]"
-          >
-            <span
-              aria-hidden
-              className="pointer-events-none absolute -inset-1 -z-10 rounded-[50px] bg-brand/60 blur-[10px]"
-            />
-            <h2 className="font-sans leading-none text-base md:text-lg text-center">
-              Офлайн приложение для iOS
-            </h2>
-          </a>
-          <div className="flex items-center justify-center text-sm md:text-base font-light">
-            <span>Необходимо установить TestFlight</span>
-          </div>
-        </div>
         <div className="container">
           <div
             className="

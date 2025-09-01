@@ -5,7 +5,7 @@ export function Support() {
         <div className="flex flex-col items-center gap-1">
           <p className="text-l  md:text-xl font-light">Мы в телеграмме</p>
           <a
-            className=" text-brand text-xl  md:text-3xl font-extrabold"
+            className=" text-brand text-[18px]  md:text-3xl font-extrabold"
             href="https://t.me/podoroZnikRF"
             target="_blank"
             rel="noreferrer"
@@ -17,7 +17,7 @@ export function Support() {
         <div className="flex flex-col items-center gap-1 ">
           <p className="text-l  md:text-xl font-light">Поддержка</p>
           <a
-            className="text-brand text-xl  md:text-3xl font-extrabold"
+            className="text-brand text-[18px]  md:text-3xl font-extrabold"
             href="https://t.me/pplus_support"
             target="_blank"
             rel="noreferrer"

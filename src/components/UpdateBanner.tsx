@@ -8,7 +8,7 @@ export function UpdateBanner() {
           aria-hidden
           className="pointer-events-none absolute -inset-1 -z-10 rounded-[12px] bg-brand/40 blur-[6px]"
         />
-        <img src={img} alt="Обновление" className="rounded-2xl w-full" />
+        <img src={img} alt="Обновление" className="rounded-xl w-full" />
       </div>
     </section>
   );
