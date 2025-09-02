@@ -1,7 +1,7 @@
 export function Support() {
   return (
     <section className="section">
-      <div className="container uppercase font-display flex flex-col items-center gap-16">
+      <div className="container uppercase font-display flex flex-col items-center gap-8 md:gap-16 mt-4">
         <div className="flex flex-col items-center gap-1">
           <p className="text-l  md:text-xl font-light">Мы в телеграмме</p>
           <a

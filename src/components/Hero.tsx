@@ -13,7 +13,7 @@ export function Hero() {
           <span className="text-white">приложение</span>
         </h1>
         <p className="mt-5 text-[12px] md:text-2xl font-display font-light uppercase">
-          Оказание первой доврачебной помощи в&nbsp;условиях
+          Оказание первой доврачебной помощи&nbsp;в&nbsp;условиях
           боевых&nbsp;действий или&nbsp;террористических&nbsp;актов
         </p>
       </section>

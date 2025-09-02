@@ -68,7 +68,7 @@ export function Testimonials() {
         <h2 className="text-[18px] md:text-3xl font-bold text-white uppercase text-center">
           Отзывы
         </h2>
-        <div className="mt-12" ref={emblaRef}>
+        <div className="mt-2 md:mt-12" ref={emblaRef}>
           <div className="embla__container">
             {reviews.map(({ id, author, text }) => (
               <figure

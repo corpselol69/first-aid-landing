@@ -10,7 +10,7 @@ export function Screenshots() {
         <div className="container">
           <div
             className="
-      flex gap-4 py-4
+      flex gap-5 py-4
       overflow-x-auto overflow-y-hidden scroll-smooth snap-x snap-mandatory
       md:grid md:grid-cols-3 md:gap-6 md:overflow-visible md:snap-none md:py-0
     "
@@ -18,8 +18,8 @@ export function Screenshots() {
             {/* Карточка 1 */}
             <div
               className="
-        relative shrink-0 w-64 snap-center
-        first:ml-[calc(50vw-8rem)] last:mr-[calc(50vw-8rem)]
+        relative shrink-0 w-44 snap-center
+        first:ml-[calc(50vw-4rem)] last:mr-[calc(50vw-4rem)]
         md:w-full md:shrink md:snap-none md:ml-0 md:first:ml-0 md:mr-0
       "
             >
@@ -32,7 +32,7 @@ export function Screenshots() {
             </div>
 
             {/* Карточка 2 */}
-            <div className="relative shrink-0 w-64 snap-center md:w-full md:shrink md:snap-none">
+            <div className="relative shrink-0 w-44 snap-center md:w-full md:shrink md:snap-none">
               <div className="pointer-events-none absolute -inset-1 bg-brand/50 blur-sm rounded-2xl opacity-60" />
               <img
                 src={shot1}
@@ -44,8 +44,8 @@ export function Screenshots() {
             {/* Карточка 3 */}
             <div
               className="
-        relative shrink-0 w-64 snap-center
-        last:mr-[calc(50vw-8rem)]
+        relative shrink-0 w-44 snap-center
+        last:mr-[calc(50vw-4rem)]
         md:w-full md:shrink md:snap-none md:mr-0
       "
             >

@@ -5,14 +5,14 @@ export function BlocksInfo() {
         <h2 className="font-display text-brand text-[18px] md:text-2xl uppercase">
           три основных блока
         </h2>
-        <div className="mt-6 space-y-4 md:space-y-8 text-white text-[14px]">
-          <p className="font-display   w-full ">
+        <div className="mt-2 md:mt-6 space-y-4 md:space-y-8 text-white text-[14px]">
+          <p className="font-display w-full ">
             <span className="text-danger font-bold">+ </span>
             <span className=" font-bold md:text-xl">АЛГОРИТМЫ. </span>
             <span className="font-light md:leading-[200%] md:text-xl">
-              Несколько вопросов о месте ранения и других параметрах. Алгоритм
-              представляет собой последовательность действий, иллюстрированную
-              видеоматериалами.
+              Несколько вопросов о&nbsp;месте ранения и&nbsp;других параметрах.
+              Алгоритм представляет собой последовательность действий,
+              иллюстрированную видеоматериалами.
             </span>
           </p>
 
@@ -29,8 +29,8 @@ export function BlocksInfo() {
             <span className="text-danger font-bold">+ </span>
             <span className=" font-bold md:text-xl">АПТЕЧКА. </span>
             <span className="font-light md:leading-[200%]  md:text-xl">
-              Содержит информацию о средствах, необходимых для оказания первой
-              доврачебной помощи.
+              Содержит информацию о&nbsp;средствах, необходимых для оказания
+              первой доврачебной помощи.
             </span>
           </p>
         </div>

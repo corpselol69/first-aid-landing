@@ -16,7 +16,7 @@ export function Downloads() {
           Скачать приложение
         </p>
 
-        <div className="mt-5 flex justify-center">
+        <div className="mt-2 md:mt-5 flex justify-center">
           <div
             role="tablist"
             aria-label="Выбор режима"
@@ -66,12 +66,12 @@ export function Downloads() {
         {/* Content */}
         {mode === "offline" ? (
           <>
-            <div className="mt-6 grid gap-[1rem] md:gap-[2rem] md:w-[60%] mx-auto">
+            <div className="mt-3 md:mt-6 grid gap-[1rem] md:gap-[2rem] md:w-[60%] mx-auto">
               <div className="flex flex-col items-center gap-1 w-full relative">
                 <a
                   href={APK_URL}
                   target="_blank"
-                  className="group relative rounded-[14px] w-full px-3 py-5 md:px-8 md:py-6 md:h-[100px] bg-black/100 overflow-visible shadow-[3px_3px_4px_0_rgba(0,0,0,0.25)] md:shadow-[6px_6px_4px_0_rgba(0,0,0,0.25)] flex items-center justify-center"
+                  className="group relative rounded-[14px] w-full px-3 py-[10px] md:px-8 md:py-6 md:h-[100px] bg-black/100 overflow-visible shadow-[3px_3px_4px_0_rgba(0,0,0,0.25)] md:shadow-[6px_6px_4px_0_rgba(0,0,0,0.25)] flex items-center justify-center"
                 >
                   <span
                     aria-hidden
@@ -99,7 +99,7 @@ export function Downloads() {
                 <a
                   href={"https://testflight.apple.com/join/yHqqzNek"}
                   target="_blank"
-                  className="group relative rounded-[14px] w-full px-3 py-5 md:px-8 md:py-6 md:h-[100px] bg-black/100 overflow-visible shadow-[3px_3px_4px_0_rgba(0,0,0,0.25)] md:shadow-[6px_6px_4px_0_rgba(0,0,0,0.25)] flex items-center justify-center"
+                  className="group relative rounded-[14px] w-full px-3 py-[10px] md:px-8 md:py-6 md:h-[100px] bg-black/100 overflow-visible shadow-[3px_3px_4px_0_rgba(0,0,0,0.25)] md:shadow-[6px_6px_4px_0_rgba(0,0,0,0.25)] flex items-center justify-center"
                 >
                   <span
                     aria-hidden
@@ -109,7 +109,7 @@ export function Downloads() {
                     <div className="flex items-center gap-3">
                       <span
                         aria-hidden
-                        className="text-white text-3xl md:text-3xl leading-none"
+                        className="text-white text-2xl md:text-3xl leading-none"
                       >
                         
                       </span>
@@ -127,7 +127,7 @@ export function Downloads() {
           </>
         ) : (
           <>
-            <div className="mt-6 grid gap-[1rem] md:gap-[2rem] md:w-[60%] mx-auto">
+            <div className="mt-3 md:mt-6 grid gap-[1rem] md:gap-[2rem] md:w-[60%] mx-auto">
               <a
                 href={RUSTORE_URL}
                 target="_blank"

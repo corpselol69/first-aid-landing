@@ -10,22 +10,18 @@ export function Partners() {
         <h2 className="text-white text-[18px] md:text-3xl font-display font-bold uppercase text-center">
           Партнеры
         </h2>
-        <div className="container mt-12">
+        <div className="container mt-2 md:">
           <div
             className="
-    flex gap-4 -mx-4 px-4 py-2
-    overflow-x-auto overflow-y-hidden scroll-smooth overscroll-x-contain touch-pan-x
-    snap-x snap-mandatory
-    md:grid md:grid-cols-3 md:gap-4 md:overflow-visible md:snap-none md:py-0 md:mx-0 md:px-0
+    grid grid-cols-3 gap-2 px-2
+    md:grid-cols-3 md:gap-4 md:px-0
   "
           >
             {/* 1 */}
             <div
               className="
-      shrink-0 w-64 aspect-square rounded-2xl bg-white
-      flex items-center justify-center snap-center
-      first:ml-[calc(50vw-8rem)]
-      md:w-full md:shrink md:snap-none md:ml-0 md:first:ml-0
+      w-full aspect-square rounded-2xl bg-white
+      flex items-center justify-center
     "
             >
               <img
@@ -38,9 +34,8 @@ export function Partners() {
             {/* 2 */}
             <div
               className="
-      shrink-0 w-64 aspect-square rounded-2xl bg-white
-      flex items-center justify-center snap-center
-      md:w-full md:shrink md:snap-none
+      w-full aspect-square rounded-2xl bg-white
+      flex items-center justify-center
     "
             >
               <img
@@ -53,10 +48,8 @@ export function Partners() {
             {/* 3 */}
             <div
               className="
-      shrink-0 w-64 aspect-square rounded-2xl bg-gray-200
-      flex items-center justify-center snap-center
-      last:mr-[calc(50vw-8rem)]
-      md:w-full md:shrink md:snap-none md:mr-0
+      w-full aspect-square rounded-2xl bg-gray-200
+      flex items-center justify-center
     "
             >
               <img
