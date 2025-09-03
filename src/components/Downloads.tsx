@@ -3,11 +3,10 @@ import { useState } from "react";
 
 export function Downloads() {
   const base = import.meta.env.BASE_URL;
-  const mark = `${base}figma/ExclamationMark.svg`;
   const android = `${base}figma/Android.svg`;
   const online = `${base}figma/online.svg`;
   const offline = `${base}figma/offline.svg`;
-  const [mode, setMode] = useState<"online" | "offline">("offline");
+  const [mode, setMode] = useState<"online" | "offline">("online");
 
   return (
     <section className="section relative overflow-visible">
