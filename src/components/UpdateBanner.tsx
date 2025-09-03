@@ -6,7 +6,7 @@ export function UpdateBanner() {
       <div className="container relative">
         <span
           aria-hidden
-          className="pointer-events-none absolute -inset-1 -z-10 rounded-[12px] bg-brand/40 blur-[6px]"
+          className="pointer-events-none absolute -inset-1 -z-10 rounded-[12px] bg-brand/40 blur-[4px]"
         />
         <img src={img} alt="Обновление" className="rounded-xl w-full" />
       </div>

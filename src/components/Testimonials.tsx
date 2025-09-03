@@ -77,7 +77,7 @@ export function Testimonials() {
               >
                 <span
                   aria-hidden
-                  className="pointer-events-none absolute -inset-[8px] -z-10 rounded-[30px] bg-[#95AB7D] blur-[8px] w-[100%] h-[100%] left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2"
+                  className="pointer-events-none absolute -inset-[8px] -z-10 rounded-[30px] bg-[#95AB7D] blur-[6px] w-[100%] h-[100%] left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2"
                 />
                 {/* сама карточка */}
                 <div className="h-full rounded-[30px] bg-[#D9D9D9] p-5 pb-[10px] md:p-6 md:pb-[14px] ">

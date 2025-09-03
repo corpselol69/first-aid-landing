@@ -23,7 +23,7 @@ export function Screenshots() {
         md:w-full md:shrink md:snap-none md:ml-0 md:first:ml-0 md:mr-0
       "
             >
-              <div className="pointer-events-none absolute -inset-1 bg-brand/50 blur-sm rounded-2xl opacity-60" />
+              <div className="pointer-events-none absolute -inset-1 bg-brand/50 blur-[2px] rounded-2xl opacity-60" />
               <img
                 src={shot2}
                 alt="скрин 2"
@@ -33,7 +33,7 @@ export function Screenshots() {
 
             {/* Карточка 2 */}
             <div className="relative shrink-0 w-44 snap-center md:w-full md:shrink md:snap-none">
-              <div className="pointer-events-none absolute -inset-1 bg-brand/50 blur-sm rounded-2xl opacity-60" />
+              <div className="pointer-events-none absolute -inset-1 bg-brand/50 blur-[2px] rounded-2xl opacity-60" />
               <img
                 src={shot1}
                 alt="скрин 1"
@@ -49,7 +49,7 @@ export function Screenshots() {
         md:w-full md:shrink md:snap-none md:mr-0
       "
             >
-              <div className="pointer-events-none absolute -inset-1 bg-brand/50 blur-sm rounded-2xl opacity-60" />
+              <div className="pointer-events-none absolute -inset-1 bg-brand/50 blur-[2px] rounded-2xl opacity-60" />
               <img
                 src={shot3}
                 alt="скрин 3"
