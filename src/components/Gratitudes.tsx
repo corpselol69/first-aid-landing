@@ -60,7 +60,7 @@ export function Gratitudes() {
         <h2 className="text-[12px] md:text-xl font-display font-light uppercase text-center !leading-[140%]">
           Благодарим за помощь в&nbsp;распространении
         </h2>
-        <div className="mt-2 md: flex flex-wrap gap-x-2 gap-y-2 text-[12px]  md:text-xl font-display font-extralight text-center items-center justify-center">
+        <div className="mt-2 md: flex flex-wrap gap-x-1 gap-y-1 md:gap-x-2 md:gap-y-2 text-[12px]  md:text-xl font-display font-extralight text-center items-center justify-center">
           {names?.map((name) => (
             <a
               key={name}
