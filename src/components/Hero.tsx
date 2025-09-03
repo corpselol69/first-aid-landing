@@ -3,7 +3,7 @@ export function Hero() {
   return (
     <>
       <section className="section ">
-        <div className="w-full md:w-[60%] flex justify-center  items-center mx-auto">
+        <div className="w-[70%] md:w-[60%] flex justify-center  items-center mx-auto my-4">
           <img src={logo} alt="Логотип" className=" h-auto object-contain" />
         </div>
       </section>

@@ -21,7 +21,7 @@ export default function Home() {
       <img
         src={ellipse2}
         alt="фон"
-        className="absolute block w-screen max-w-none h-auto z-0 top-[20rem] left-0 opacity-60"
+        className="absolute block w-screen max-w-none h-auto z-0 top-[20rem] md:top-0 left-0 opacity-60"
       />
       <img
         src={bg}

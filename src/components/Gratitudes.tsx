@@ -57,10 +57,10 @@ export function Gratitudes() {
   return (
     <section className="section">
       <div className="container mt-4">
-        <h2 className="text-[18px] md:text-3xl font-display font-bold uppercase text-center !leading-[140%]">
+        <h2 className="text-[12px] md:text-3xl font-display font-light uppercase text-center !leading-[140%]">
           Благодарим за помощь в&nbsp;распространении
         </h2>
-        <div className="mt-2 md: flex flex-wrap gap-x-2 gap-y-2 text-[14px]  md:text-2xl font-display font-extralight text-center items-center justify-center">
+        <div className="mt-2 md: flex flex-wrap gap-x-2 gap-y-2 text-[12px]  md:text-2xl font-display font-extralight text-center items-center justify-center">
           {names?.map((name) => (
             <a
               key={name}

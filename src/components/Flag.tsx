@@ -3,9 +3,9 @@ export function Flag() {
   const flag = `${base}figma/flag.png`;
 
   return (
-    <section className="section">
-      <div className="flex items-center justify-center">
-        <img src={flag} alt="Flag" className="w-82 h-auto max-w-[82px]" />
+    <section className="section ">
+      <div className="flex items-center justify-center mb-3">
+        <img src={flag} alt="Flag" className="w-42 h-auto max-w-[42px]" />
       </div>
     </section>
   );

@@ -1,28 +1,28 @@
 export function Support() {
   return (
     <section className="section">
-      <div className="container uppercase font-display flex flex-col items-center gap-8 md:gap-16 mt-4">
-        <div className="flex flex-col items-center gap-1">
-          <p className="text-l  md:text-xl font-light">Мы в телеграмме</p>
+      <div className="container uppercase font-display flex flex-col items-center gap-1 md:gap-16 mt-4">
+        <div className="flex  items-center gap-1">
+          <p className="text-[12px]  md:text-xl font-light">наш Канал</p> |
           <a
-            className=" text-brand text-[18px]  md:text-3xl font-extrabold"
+            className=" text-brand text-[12px]  md:text-3xl font-bold "
             href="https://t.me/podoroZnikRF"
             target="_blank"
             rel="noreferrer"
           >
-            @podoroZnikRF
+            @<span className="underline">podoroZnikRF</span>
           </a>
         </div>
 
-        <div className="flex flex-col items-center gap-1 ">
-          <p className="text-l  md:text-xl font-light">Поддержка</p>
+        <div className="flex  items-center gap-1 ">
+          <p className="text-[12px]  md:text-xl font-light">Поддержка</p>|
           <a
-            className="text-brand text-[18px]  md:text-3xl font-extrabold"
+            className="text-brand text-[12px]  md:text-3xl font-bold "
             href="https://t.me/pplus_support"
             target="_blank"
             rel="noreferrer"
           >
-            @pplus_support
+            @<span className="underline">pplus_support</span>
           </a>
         </div>
       </div>
